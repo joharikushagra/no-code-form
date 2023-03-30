@@ -21,6 +21,7 @@ export const defaultData = [
     ...defaultField,
     fieldName: "person",
     type: CONSTANTS.types.object,
+    required: true,
     items: [
       generateField({
         ...defaultField,

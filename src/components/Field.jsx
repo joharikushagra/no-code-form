@@ -63,7 +63,7 @@ const Field = ({ field, deleteNode, addNode, updateNode }) => {
           <div className="switch-style">
             <span>Required</span>
             <Switch
-              value={field.required}
+              checked={field.required}
               onChange={() => {
                 handleChange({ required: !field.required });
               }}
