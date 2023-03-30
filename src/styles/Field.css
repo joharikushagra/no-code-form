@@ -1,0 +1,35 @@
+.field-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+}
+.field-left,
+.field-right {
+  display: flex;
+  align-items: center;
+}
+.field-right {
+  visibility: hidden;
+}
+.field-wrapper:hover  .field-right{
+  visibility: visible;
+}
+.input-style {
+  border: none;
+  margin-right: 4px;
+}
+.add-icon-style {
+  margin-right: 8px;
+  cursor: pointer;
+}
+.switch-style {
+  margin-right: 2px;
+  align-items: center;
+}
+.field-nested {
+  margin-left: 1.5rem;
+  width: 100%;
+  border-left: 2px solid #0cb7fb;
+}
