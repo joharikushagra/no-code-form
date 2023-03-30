@@ -17,17 +17,45 @@ export const defaultField = {
 };
 
 export const defaultData = [
-  generateField(),
-  generateField({ ...defaultField, type: CONSTANTS.types.number }),
-  generateField({ ...defaultField, type: CONSTANTS.types.number }),
-  {
-    ...generateField({ ...defaultField, type: CONSTANTS.types.object }),
+  generateField({
+    ...defaultField,
+    fieldName: "person",
+    type: CONSTANTS.types.object,
     items: [
-      generateField({ ...defaultField, type: CONSTANTS.types.number }),
-      generateField(),
+      generateField({
+        ...defaultField,
+        fieldName: "name",
+        type: CONSTANTS.types.object,
+        items: [
+          generateField({
+            ...defaultField,
+            fieldName: "firstname",
+            type: CONSTANTS.types.string,
+          }),
+          generateField({
+            ...defaultField,
+            fieldName: "lastname",
+            type: CONSTANTS.types.string,
+          }),
+        ],
+      }),
+      generateField({
+        ...defaultField,
+        fieldName: "age",
+        type: CONSTANTS.types.number,
+      }),
     ],
-  },
-  generateField(),
+  }),
+  generateField({
+    ...defaultField,
+    fieldName: "order",
+    type: CONSTANTS.types.string,
+  }),
+  generateField({
+    ...defaultField,
+    fieldName: "class",
+    type: CONSTANTS.types.boolean,
+  }),
 ];
 
 export function generateField(field = defaultField) {
