@@ -12,7 +12,8 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Interface
-![test1](https://user-images.githubusercontent.com/57484457/228926566-5a721ffc-3dfc-4d59-a7ad-20fa9b7c55c9.PNG)
+
+![test1](https://user-images.githubusercontent.com/57484457/228928084-d389bd45-58e2-4a06-b6ec-d5a65b7c2ccf.PNG)
 
 - User can create nested fields of type objects
 - Removing object field would delete all the nested child fields
